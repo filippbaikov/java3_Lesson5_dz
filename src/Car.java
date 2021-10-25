@@ -2,7 +2,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Car implements Runnable, Callable<String> {
+public class Car implements Runnable {
     private static int CARS_COUNT;
     private static AtomicInteger atomicInteger;
 
@@ -52,8 +52,5 @@ public class Car implements Runnable, Callable<String> {
             e.printStackTrace();
         }
     }
-    @Override
-    public String call() throws Exception {
-        return null;
-    }
+
 }
